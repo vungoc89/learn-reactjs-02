@@ -1,26 +1,14 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import React from 'react';
+import TodoFeature from './features/Todo/pages';
+import AlbumFeature from './features/Album/pages';
 
 function App() {
-  const name = 'Ngoc';
-  const age = 18;
-  const isMale = true;
-  const student ={
-    name: 'Easy Frontend',
-
-  };
-  const colorList = ['red', 'green', 'blue'];
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Vu Quoc Ngoc
-        </p>
-
-        <p>Hello {name} - {age} </p>
-      </header>
+      <TodoFeature></TodoFeature>
+      {/* <AlbumFeature></AlbumFeature> */}
     </div>
   );
 }
